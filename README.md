@@ -1,6 +1,8 @@
 # uwork
 
-Tiny web worker that doesn't need an external file to run. Perfect for math intensive tasks as it uses several CPU processes in [true parallel](http://ejohn.org/blog/web-workers/).
+Tiny web worker that doesn't need an external file to run. Perfect for math intensive tasks as it uses several CPU processes in [true parallel](http://ejohn.org/blog/web-workers/):
+
+![CPU in async vs in parallel](cpu.png)
 
 Web workers are awesome and this project is taking a subset of that awesomeness and make it super easy to implement. This is for functions that take N arguments, process them and then return a value once.
 
