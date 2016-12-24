@@ -215,3 +215,8 @@ What this means is that don't build anything dynamically (from the previous limi
 ### Native workers
 
 Native workers can communicate over time several messages, so this library is somewhat limiting that in exchange for a much simpler API. If you like this I recommend you dig into them.
+
+
+### Credit
+
+Learned from [(Blob() & URL.createObjectURL](jsfiddle.net/christopheviau/90syrp0q/)

@@ -1,6 +1,5 @@
-// Microwork; a tiny, javascript-only Worker library with promises
+// uwork; a tiny, javascript-only Worker library with promises
 // By Francisco Presencia (http://francisco.io/)
-// Partly based on (Blob() & URL.createObjectURL) from jsfiddle.net/christopheviau/90syrp0q/
 var uwork = (workable) => function (...args) {
   return new Promise(function(resolve, reject) {
     var handler = res => {
@@ -23,8 +22,10 @@ var uwork = (workable) => function (...args) {
       {"type": "text\/plain"}
     );
     var ww = new Worker(URL.createObjectURL(blob));
-    if (worker.timeout) {
-      var timeout = setTimeout(e => reject(new Error('Timed out: took longer than ' + worker.timeout + 'ms')), worker.timeout);
+    if (uwork.timeout) {
+      var timeout = setTimeout(e => {
+        reject(new Error('Timed out: took longer than ' + uwork.timeout + 'ms'));
+      }, uwork.timeout);
     }
     ww.onmessage = e => {
       if (e.data && e.data.error) {
@@ -36,6 +37,6 @@ var uwork = (workable) => function (...args) {
   });
 };
 
-if (typeof module !== undefined) {
+if (typeof module !== 'undefined') {
   module.exports = uwork;
 }
