@@ -1,0 +1,27 @@
+{
+  "name": "uwork",
+  "version": "1.0.0",
+  "description": "Tiny webworker that doesn't need an external file",
+  "main": "work.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/franciscop/uwork.git"
+  },
+  "keywords": [
+    "web",
+    "worker",
+    "small",
+    "function",
+    "math",
+    "javascript"
+  ],
+  "author": "Francisco Presencia <public@francisco.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franciscop/uwork/issues"
+  },
+  "homepage": "https://github.com/franciscop/uwork#readme"
+}
