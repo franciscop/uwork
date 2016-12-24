@@ -23,7 +23,7 @@ npm install uwork --save
 Then create the work that you want performed and wrap it with a function called `uwork`. Let's calculate Pi as an example:
 
 ```js
-// Simple return for sync operations
+// Create the piece of work to be performed
 var work = uwork(function findPi(number = 10000) {
   var inside = 0;
   for (var i = 0; i < number; i++) {
@@ -103,7 +103,7 @@ var work = uwork(function intensive(args) {
 
 ```js
 // Using promises
-var work = uwork(function findPi(number = 10000) {
+var work = uwork(function intensive(number = 10000) {
   return new Promise((resolve, reject) => {
 
     // heavy work here
@@ -139,6 +139,7 @@ work(args).then(res => res === 42);
 ```
 
 ```js
+// Just wrap uwork() around it to make it parallel
 let work = uwork(function intensive() => {
   return new Promise((resolve, reject) => {
 
