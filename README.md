@@ -4,7 +4,7 @@ Web workers made easy. Perfect for math intensive tasks as [it uses the CPU in p
 
 ![CPU in async vs in parallel](cpu.png)
 
-Web workers are awesome and this project is taking a subset of that awesomeness and make it super easy to implement. This is for functions that take N arguments, process them and then return a value once.
+Web workers are awesome and this project is taking a subset of that and making it trivial to implement. This is for functions that take N arguments, process them and then return a value once.
 
 
 
