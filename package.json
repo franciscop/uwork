@@ -1,6 +1,6 @@
 {
   "name": "uwork",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny webworker that doesn't need an external file",
   "main": "work.js",
   "scripts": {
