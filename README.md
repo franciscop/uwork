@@ -56,7 +56,7 @@ There's only a single option so far: `timeout` (ms). Stablish a maximum time for
 
 ```js
 // Limit it to 10s
-worker.timeout = 10000;
+uwork.timeout = 10000;
 
 // ...
 ```
