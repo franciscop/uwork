@@ -13,7 +13,7 @@ Web workers are awesome and this project is taking a subset of that and making i
 Include it in your website:
 
 ```html
-<script src="https://unpkg.com/uwork@1"></script>
+<script src="https://cdn.jsdelivr.net/npm/uwork@1.0.3/uwork.js"></script>
 ```
 
 Or with npm:
