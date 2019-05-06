@@ -1,11 +1,15 @@
 # uwork
 
-Web workers made easy. Perfect for math intensive tasks as [it uses the CPU in parallel](http://ejohn.org/blog/web-workers/):
+Run CPU-intensive operations [in true parallel Web Workers](http://ejohn.org/blog/web-workers/):
 
 ![CPU in async vs in parallel](cpu.png)
 
-Web workers are awesome and this project is taking a subset of that and making it trivial to implement. This is for functions that take N arguments, process them and then return a value once.
+This library makes it trivial to implement a web worker within your normal JS code:
 
+```js
+const findPi = uwork(fn);
+const pi = await findPi();
+```
 
 
 ## Getting started
