@@ -1,6 +1,6 @@
 # uwork
 
-Run CPU-intensive operations [in true parallel Web Workers](http://ejohn.org/blog/web-workers/):
+Run CPU-intensive operations [in true parallel with Web Workers](http://ejohn.org/blog/web-workers/):
 
 ![CPU in async vs in parallel](cpu.png)
 
