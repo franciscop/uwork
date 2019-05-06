@@ -4,10 +4,10 @@ Run CPU-intensive operations [in true parallel with Web Workers](http://ejohn.or
 
 ![CPU in async vs in parallel](cpu.png)
 
-This library makes it trivial to implement a web worker within your normal JS code:
+This library makes it trivial to implement a web worker in your browser JS code:
 
 ```js
-const findPi = uwork(fn);
+const findPi = uwork(expensiveFn);
 const pi = await findPi();
 ```
 
