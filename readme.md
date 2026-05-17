@@ -1,4 +1,4 @@
-# uwork
+# uwork [![uwork](https://img.shields.io/npm/v/uwork?label=uwork&color=greenlime)](https://www.npmjs.com/package/uwork) [![dependencies](https://img.shields.io/badge/dependencies-0-limegreen.svg)](https://github.com/franciscop/uwork/blob/master/package.json) [![](https://data.jsdelivr.com/v1/package/npm/uwork/badge?style=rounded)](https://www.jsdelivr.com/package/npm/uwork)
 
 Run CPU-intensive operations [in true parallel with Web Workers](http://ejohn.org/blog/web-workers/):
 
