@@ -1,6 +1,6 @@
 {
   "name": "uwork",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tiny webworker that doesn't need an external file",
   "repository": "github:franciscop/uwork",
   "author": "Francisco Presencia <public@francisco.io> (https://francisco.io/)",
