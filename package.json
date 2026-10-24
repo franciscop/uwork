@@ -15,6 +15,7 @@
     "javascript"
   ],
   "scripts": {
+    "test": "bun test",
     "lint": "oxlint uwork.js"
   },
   "main": "uwork.js",
