@@ -10,20 +10,18 @@ var uwork = (workable) => function (...args) {
           postMessage({ error: err.toString() });
         });
       }
-      if (typeof res !== undefined) {
-        if (res instanceof Error) {
-          return postMessage({ error: err.toString() });
-        }
-        postMessage(res);
+      if (res instanceof Error) {
+        return postMessage({ error: err.toString() });
       }
+      postMessage(res);
     };
     var blob = new Blob(
       ['(' + handler + ')((' + workable + ')(' + args + '))'],
-      {"type": "text\/plain"}
+      {"type": "text/plain"}
     );
     var ww = new Worker(URL.createObjectURL(blob));
     if (uwork.timeout) {
-      var timeout = setTimeout(e => {
+      var timeout = setTimeout(() => {
         reject(new Error('Timed out: took longer than ' + uwork.timeout + 'ms'));
       }, uwork.timeout);
     }
